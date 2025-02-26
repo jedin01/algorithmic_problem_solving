@@ -10,7 +10,7 @@ public class QuadraticEquation {
         this.a = a;
         this.b = b;
         this.c = c;
-        this.equation = "ax²+bx+c=0"
+        this.equation = "ax²+b"
                 .replace("a", a == 1 ? "" : String.valueOf(a))
                 .replace("+b", b == 1 ? "+" : b < 0 ? String.valueOf(b) : "+" + String.valueOf(b))
                 .replace("c", String.valueOf(c));
