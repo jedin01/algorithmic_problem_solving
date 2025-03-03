@@ -23,7 +23,7 @@ public class QuadraticEquation {
         this.coeficienteLinear=Double.parseDouble(coeficienteLinear.toString());
         this.coeficienteAngular=Double.parseDouble(coeficienteAngular.toString());
         this.grau=2;
-        this.coeficienteX = this.coeficienteX;
+        this.coeficienteX = Double.parseDouble(coeficienteX.toString());
         this.leiFormacao = coeficienteAngular+"x^"+grau+"+"+coeficienteX+"x^"+(grau-1)+"+"+coeficienteLinear;
         this.discriminante = Math.pow(this.coeficienteX, 2) - 4 * coeficienteAngular * coeficienteLinear;
         this.solutionsList = new ArrayList<>();
