@@ -59,4 +59,10 @@ public class LinearEquation {
             this.raizes.add(-coeficienteLinear/coeficienteAngular);
         }
     }
+
+    public String getDescricao(){
+        return "Esta é uma funcao polinomial linear";
+    }
+
+
 }
