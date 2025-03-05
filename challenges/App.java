@@ -8,7 +8,8 @@ import java.util.regex.Pattern;
 public class App {
 
     public static void main(String[] args) {
-        System.out.println(new LinearEquation("2x-4").getEstudoCompleto());
+        new LinearEquation("3x+6").getEstudoCompleto()
+                .forEach((chave, valor) -> System.out.println(chave + " -> " + valor));
 
     }
 }
