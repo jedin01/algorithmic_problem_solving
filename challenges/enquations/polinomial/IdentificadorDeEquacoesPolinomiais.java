@@ -20,6 +20,7 @@ public class IdentificadorDeEquacoesPolinomiais {
         this.padrao = Pattern.compile("([-+]?\\d*\\.?\\d*)x?(\\^\\d+)");
         this.matcher = padrao.matcher(expressao);
         this.encontrarMaiorGrau();
+
     }
 
     public void encontrarMaiorGrau() {
