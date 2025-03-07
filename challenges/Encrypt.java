@@ -20,11 +20,14 @@ public class Encrypt {
     public String [] toEncrypt(String[] inputs){
 
         // first step
-        for (int i= 32; i<=126; i++){
-            int j = 0;
-            inputs[j].toCharArray();
-            j++;
+        for(int i = 0; i<inputs.length; i++){
+            for (int j = 32; j<= 126; j++){
+                if(inputs[i].toCharArray()[j-32] == (char) j){
+                    inputs[i].toCharArray()[j-32] = (char) (j+3);
+                }
+            }
         }
+        return inputs;
     }
     public void checkPlace(String[] inputs){
 
